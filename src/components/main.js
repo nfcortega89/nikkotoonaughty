@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Card from './card';
 import jsonp from 'jsonp';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { login } from '../actions';
 
-export default class Main extends Component {
+class Main extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -16,12 +19,14 @@ export default class Main extends Component {
     let tempData = []
     this.state.usernames.forEach((user, index, array) => {
       const ACCESS_TOKEN = window.location.hash.split('=')[1];
+      ACCESS_TOKEN ? this.props.login() : null
       const url = `https://api.instagram.com/v1/users/${user}/media/recent/?access_token=${ACCESS_TOKEN}`;
       jsonp(url, null, (err, res) => {
         if (err) {
           console.error('ERROR FROM CARD: ', err.message);
         }
         else {
+          // set action called FETCH_USER DATA that passes res.data as payload
           tempData = [...tempData, res.data]
           if (index === array.length - 1) {
             this.setState({data: tempData.reduce((arr, carry) => {
@@ -44,7 +49,6 @@ export default class Main extends Component {
       <div>Loading...</div>
     }
     else{
-      console.log(this.state.data)
       this.state.data.map((picture, index) => {
         pics.push(<Card image={picture} key={picture.id}/>);
       })
@@ -60,3 +64,8 @@ export default class Main extends Component {
       )
     }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ login }, dispatch)
+}
+export default connect(null, mapDispatchToProps)(Main)

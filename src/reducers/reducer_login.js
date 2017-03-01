@@ -1,9 +1,15 @@
 import { AUTHORIZE_USER } from '../actions/index';
 
-export default function(state = null, action) {
+const intialState = {
+    isLoggedIn: false
+}
+
+export default function(state = intialState, action) {
   switch(action.type) {
     case AUTHORIZE_USER:
-    return [...state, action.text ];
+    return Object.assign({}, state, {
+      isLoggedIn: true
+    })
   }
   return state;
 }

@@ -19,10 +19,8 @@ export default class App extends Component {
 
 /**
  * TODO:
- * - Install redux, redux-think
- * - Set up store (createStore) and connect thunk as middleware
- * - Combine reducers
- * - Create Auth reducer
- * - Create Login Action
- * - Toggle Nav Login/Logout using store/reducer
+ * style header
+ * replace logo with a text logo
+ * move all logic from getApi into actions
+ * have reducer combine actions
  */

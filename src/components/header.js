@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { login } from '../actions/index';
+import { login } from '../actions';
 
 class Header extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      authenticate: false,
-      userStatus: 'Login'
-    }
     this.onAuthenticateUser = this.onAuthenticateUser.bind(this)
   }
   onAuthenticateUser() {
-    this.setState({
-      authenticate: true,
-      userStatus: 'Logout'
-    })
+    console.log("Authenticating")
+    this.props.login() // action
   }
   render() {
     return (
@@ -26,16 +20,22 @@ class Header extends Component {
         </div>
         <ul>
           <li><a>Follow User</a></li>
-          <li><a onClick={this.onAuthenticateUser} href={this.props.url}>{this.state.userStatus}</a></li>
+          <li><a onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "Logout" : "Login"}</a></li>
         </ul>
       </div>
     );
   }
 }
-function mapStateToProps(state){
+
+function mapStateToProps(state) {
+  // login is from the reducer
   return {
-    userStatus: state.userStatus
-  };
+    isLoggedIn: state.login.isLoggedIn
+  }
 }
 
-export default connect(null, mapStateToProps)(Header)
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({login}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
