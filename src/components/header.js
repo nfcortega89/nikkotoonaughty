@@ -27,8 +27,9 @@ class Header extends Component {
   }
 }
 
+// allows us to use import state and use them as props
 function mapStateToProps(state) {
-  // login is from the reducer
+  // login is from the reducer -> index.js
   return {
     isLoggedIn: state.login.isLoggedIn
   }

@@ -1,4 +1,4 @@
-import { AUTHORIZE_USER } from '../actions/index';
+import { AUTHORIZE_USER } from '../actions';
 
 const intialState = {
     isLoggedIn: false
