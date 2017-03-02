@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import LoginReducer from './reducer_login';
-import GetApi from './reducer_getapi';
+import FetchApi from './reducer_fetch_api';
 
 const rootReducer = combineReducers({
   login: LoginReducer,
-  data: GetApi
+  data: FetchApi
 });
 
 export default rootReducer;

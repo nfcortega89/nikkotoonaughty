@@ -1,4 +1,7 @@
-.card-container {
+.app {
+  width: 100%
+}
+.gallery-container {
   padding-top: 5em;
   border-top: 1 solid black;
 }
@@ -22,7 +25,17 @@
   list-style-type: none;
   display: inline;
   padding-left: 0.8em;
+  float: right;
 }
-.footer-container > ul {
-  display: inline
+.footer-container {
+  background-color: #2a142d;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+}
+.footer-container > ul, li {
+  float: none;
+  display: inline;
+  margin: 0;
 }

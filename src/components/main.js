@@ -3,7 +3,7 @@ import Card from './card';
 import jsonp from 'jsonp';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { login, getApi } from '../actions';
+import { login, fetchData } from '../actions';
 
 class Main extends Component {
   constructor(props){
@@ -16,9 +16,8 @@ class Main extends Component {
     this.getApiData = this.getApiData.bind(this);
   }
   getApiData() {
-    console.log(this.props.getApi())
+    console.log(this.props.fetchData())
     console.log(this.props.data.payload)
-
     let tempData = []
     this.state.usernames.forEach((user, index, array) => {
       const ACCESS_TOKEN = window.location.hash.split('=')[1];
@@ -60,8 +59,8 @@ class Main extends Component {
   }
   render() {
       return (
-        <div className="card-container">
-          <h4>Results from ajax</h4>
+        <div className="gallery-container">
+          <h4>IG:</h4>
           {this.renderList()}
         </div>
       )
@@ -73,7 +72,7 @@ function mapStateToProps({ data }) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ getApi, login }, dispatch)
+  return bindActionCreators({ fetchData, login }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)

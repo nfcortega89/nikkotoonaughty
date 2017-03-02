@@ -3,6 +3,7 @@ let jsonp = require('superagent-jsonp');
 
 export const AUTHORIZE_USER = "AUTHORIZE_USER";
 export const FETCH_DATA = "FETCH_DATA";
+export const REQUEST_DATA = "REQUEST_DATA";
 
 export function login() {
   return {
@@ -10,8 +11,7 @@ export function login() {
     isLoggedIn: true
   }
 }
-
-export function getApi() {
+export function fetchData() {
   const ACCESS_TOKEN = window.location.hash.split('=')[1];
   const url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}`;
   const request = superagent.get({url}).use(jsonp)

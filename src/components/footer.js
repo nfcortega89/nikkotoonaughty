@@ -3,39 +3,45 @@ import React from 'react';
 export default function Footer() {
   return (
     <div className="footer-container">
-      <ul>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Facebook</a>
-        </li>
-        <li>
-          <a href="">Twitter</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="">Terms and Conditions</a>
-        </li>
-        <li>
-          <a href="">DMCA Notice</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">Beyonce</a>
-        </li>
-        <li>
-          <a href="">Megan Foxx</a>
-        </li>
-        <li>
-          <a href="">Nikko Ortega</a>
-        </li>
-      </ul>
+      <div className="col-md-3">
+        <ul>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Facebook</a>
+          </li>
+          <li>
+            <a href="">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-md-6">
+        <ul>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="">DMCA Notice</a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-md-3">
+        <ul>
+          <li>
+            <a href="">Arthur Longbottom</a>
+          </li>
+          <li>
+            <a href="">Georgia Siapno</a>
+          </li>
+          <li>
+            <a href="">Alison Kim</a>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }

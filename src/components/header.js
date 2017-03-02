@@ -9,7 +9,6 @@ class Header extends Component {
     this.onAuthenticateUser = this.onAuthenticateUser.bind(this)
   }
   onAuthenticateUser() {
-    console.log("Authenticating")
     this.props.login() // action
   }
   render() {
