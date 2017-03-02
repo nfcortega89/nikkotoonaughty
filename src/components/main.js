@@ -17,8 +17,8 @@ class Main extends Component {
   }
   getApiData() {
     console.log(this.props.getApi())
-    console.log(this.props.data)
-    
+    console.log(this.props.data.payload)
+
     let tempData = []
     this.state.usernames.forEach((user, index, array) => {
       const ACCESS_TOKEN = window.location.hash.split('=')[1];

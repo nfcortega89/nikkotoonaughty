@@ -1,3 +1,28 @@
+.card-container {
+  padding-top: 5em;
+  border-top: 1 solid black;
+}
 .image-container > img {
   width: 300px;
+}
+.logo-container {
+  float: left;
+  width: 69px;
+  height: 61px;
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-container {
+  padding-top: 1rem;
+}
+.header-container > ul, li {
+  position: relative;
+  top: 8px;
+  list-style-type: none;
+  display: inline;
+  padding-left: 0.8em;
+}
+.footer-container > ul {
+  display: inline
 }

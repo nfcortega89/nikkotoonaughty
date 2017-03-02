@@ -16,11 +16,10 @@ class Header extends Component {
     return (
       <div className="header-container">
         <div className="logo-container">
-          <img src="http://placekitten.com/200/75" />
         </div>
         <ul>
-          <li><a>Follow User</a></li>
           <li><a onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "Logout" : "Login"}</a></li>
+          <li><a>Follow User</a></li>
         </ul>
       </div>
     );
