@@ -6,39 +6,39 @@ export default function Footer() {
       <div className="col-md-3">
         <ul>
           <li>
-            <a href="">About</a>
+            <a className="links-footer" href="">About</a>
           </li>
           <li>
-            <a href="">Facebook</a>
+            <a className="links-footer" href="">Facebook</a>
           </li>
           <li>
-            <a href="">Twitter</a>
+            <a className="links-footer" href="">Twitter</a>
           </li>
         </ul>
       </div>
       <div className="col-md-6">
         <ul>
           <li>
-            <a href="">Privacy Policy</a>
+            <a className="links-footer" href="">Privacy Policy</a>
           </li>
           <li>
-            <a href="">Terms & Conditions</a>
+            <a className="links-footer" href="">Terms & Conditions</a>
           </li>
           <li>
-            <a href="">DMCA Notice</a>
+            <a className="links-footer" href="">DMCA Notice</a>
           </li>
         </ul>
       </div>
       <div className="col-md-3">
         <ul>
           <li>
-            <a href="">Arthur Longbottom</a>
+            <a className="links-footer" href="">Arthur Longbottom</a>
           </li>
           <li>
-            <a href="">Georgia Siapno</a>
+            <a className="links-footer" href="">Georgia Siapno</a>
           </li>
           <li>
-            <a href="">Alison Kim</a>
+            <a className="links-footer" href="">Alison Kim</a>
           </li>
         </ul>
       </div>

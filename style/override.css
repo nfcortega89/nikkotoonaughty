@@ -1,14 +1,13 @@
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
 .header-container {
   width: 100%;
   margin: 0;
-  padding: 1rem;
+  padding: 3rem;
   height: 11rem;
-
 }
 .footer-container {
   width: 100%;

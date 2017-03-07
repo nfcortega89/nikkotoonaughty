@@ -11,12 +11,21 @@ export function login() {
     isLoggedIn: true
   }
 }
-export function fetchData() {
-  const ACCESS_TOKEN = window.location.hash.split('=')[1];
-  const url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}`;
-  const request = superagent.get({url}).use(jsonp)
+export function fetchData(data) {
   return {
     type: FETCH_DATA,
-    payload: request
+    payload: data
   }
+}
+export function requestData() {
+  return (dispatch, getState) => {
+    const ACCESS_TOKEN = window.location.hash.split('=')[1];
+    const url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}`;
+    superagent.get(url).use(jsonp).end((err, res) => {
+      if(!res){
+        return;
+      }
+      dispatch(fetchData(res.body.data));
+    })
+  };
 }

@@ -17,5 +17,4 @@ ReactDOM.render(
   </Provider>
   , document.querySelector('.container'));
 
-console.log(store.getState())
 window.store = store
