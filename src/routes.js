@@ -6,7 +6,7 @@ import Main from './components/main';
 import Card from './components/card';
 
 export default (
-  <Route path="/nikkotoonaughty" component={App}>
+  <Route path="nikkotoonaughty" component={App}>
     <IndexRoute component={Main} />
     <Route path="/redirect" component={Main} />
   </Route>
