@@ -3,7 +3,6 @@ let jsonp = require('superagent-jsonp');
 
 export const AUTHORIZE_USER = "AUTHORIZE_USER";
 export const FETCH_DATA = "FETCH_DATA";
-export const REQUEST_DATA = "REQUEST_DATA";
 
 export function login() {
   return {
