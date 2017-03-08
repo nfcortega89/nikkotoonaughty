@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var exec = require('child_process').exec
 
 gulp.task('copy', function() {
-  gulp.src('./style/**/*').pipe(gulp.dest('./public/style'))
+  // gulp.src('./style/**/*').pipe(gulp.dest('./public/style'))
 })
 
 gulp.task('webpack', function(cb) {
