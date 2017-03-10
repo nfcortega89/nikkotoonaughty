@@ -14744,7 +14744,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -27469,7 +27469,7 @@
 	    key: 'render',
 	    value: function render() {
 	      var CLIENT_ID = 'b78187d5d63a43dab1cfb2e8d55880e7';
-	      var REDIRECT_URI = 'https://serene-temple-47189.herokuapp.com/redirect';
+	      var REDIRECT_URI = 'https://nikkotoonaughty.herokuapp.com/redirect';
 	      var url = 'https://api.instagram.com/oauth/authorize/?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=token';
 	      return _react2.default.createElement(
 	        'div',
@@ -28176,10 +28176,10 @@
 	      this.username = user;
 	      this.password = pass;
 	    break;
-	      
+
 	    case 'bearer': // usage would be .auth(accessToken, { type: 'bearer' })
 	      this.set('Authorization', 'Bearer ' + user);
-	    break;  
+	    break;
 	  }
 	  return this;
 	};
@@ -28585,7 +28585,7 @@
 /* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Expose `Emitter`.
 	 */
@@ -29391,7 +29391,7 @@
 /* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Module dependencies.
 	 */
@@ -29530,7 +29530,7 @@
 /* 272 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Return the mime type for the given `str`.
 	 *
@@ -30276,7 +30276,7 @@
 /* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * This is the common logic for both the Node.js and web browser
 	 * implementations of `debug()`.
