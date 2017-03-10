@@ -27469,7 +27469,7 @@
 	    key: 'render',
 	    value: function render() {
 	      var CLIENT_ID = 'b78187d5d63a43dab1cfb2e8d55880e7';
-	      var REDIRECT_URI = 'http://localhost:8080/redirect';
+	      var REDIRECT_URI = 'https://serene-temple-47189.herokuapp.com/redirect';
 	      var url = 'https://api.instagram.com/oauth/authorize/?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=token';
 	      return _react2.default.createElement(
 	        'div',
