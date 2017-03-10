@@ -8,6 +8,7 @@ const app = express();
 
 app.use(express.static('public'))
 app.use('/assets', express.static('assets'))
+app.use('/style', express.static('style'))
 app.use(jsonParser)
 
 app.get('*', (req, res) => {
