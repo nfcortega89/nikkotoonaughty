@@ -1,16 +1,15 @@
 const express = require('express');
-var spa = require('express-spa')
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const fallback = require('express-history-api-fallback')
 const jsonParser = bodyParser.json();
 
 const app = express();
+const root = `${__dirname}/public`
+
 app.use(jsonParser)
-app.use(spa())
-app.use(express.static('public'))
-app.use('/assets', express.static('assets'))
-app.use('/style', express.static('style'))
+app.use(express.static(root))
+app.use(fallback('index.html', { root: root }))
 
 
 // app.get('*', (req, res) => {
