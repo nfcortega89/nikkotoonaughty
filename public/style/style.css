@@ -1,8 +1,18 @@
+@font-face {
+  font-family: fnc;
+  src: url(..assets/FISH&CHIPS-Regular/ttf);
+}
+body{
+   font-family: 'Open Sans',serif;
+}
 .gallery-container {
   border-top: 1 solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.logo {
+  font-family: fnc
 }
 .image-container {
   float: left;
@@ -16,7 +26,7 @@
 }
 .header-container {
   background-color: #05101c;
-  border-bottom: 17px solid ##b9b9b9;
+  border-bottom: 17px solid #b9b9b9;
 }
 .header-container > ul, li {
   position: relative;
