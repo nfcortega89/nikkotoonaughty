@@ -10,21 +10,13 @@
 .image-container > img {
   width: 300px;
 }
-.logo-container {
-  float: left;
-  width: 69px;
-  height: 61px;
-  background-image: url("../assets/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .gallery-container > h4 {
   flex: 1 0 100%;
   padding: 1rem;
 }
 .header-container {
-  background-color: #1a1a1a;
-  border-bottom: 17px solid #decb4f;
+  background-color: ##05101c;
+  border-bottom: 17px solid ##b9b9b9;
 }
 .header-container > ul, li {
   position: relative;

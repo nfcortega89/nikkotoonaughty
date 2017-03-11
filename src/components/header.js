@@ -14,7 +14,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header-container">
-        <div className="logo-container">
+        <span className="logo">Nikkotoonaughty</span>
         </div>
         <ul>
           <li><a onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "Logout" : "Login"}</a></li>
