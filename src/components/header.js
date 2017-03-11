@@ -15,6 +15,7 @@ class Header extends Component {
     return (
       <div className="header-container">
         <span className="logo"><h1>CUR-A-FAB</h1></span>
+        <span className="slogan"><h2>what interests you?</h2></span>
         <ul>
           <li><a className="nav" onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "LOGOUT" : "LOGIN"}</a></li>
           <li><a className="nav">FOLLOW USER</a></li>

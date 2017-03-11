@@ -27558,6 +27558,15 @@
 	          )
 	        ),
 	        _react2.default.createElement(
+	          'span',
+	          { className: 'slogan' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'what interests you?'
+	          )
+	        ),
+	        _react2.default.createElement(
 	          'ul',
 	          null,
 	          _react2.default.createElement(

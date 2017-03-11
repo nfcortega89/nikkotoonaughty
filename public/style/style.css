@@ -4,7 +4,11 @@
 }
 @font-face {
   font-family: simple;
-  src: url('Simple Print');
+  src: url('Simple Print.ttf');
+}
+@font-face {
+  font-family: betty;
+  src: url('Thinking_of_Betty.ttf');
 }
 .gallery-container {
   border-top: 1 solid black;
@@ -15,8 +19,17 @@
 .logo {
   text-align: center;
 }
+.slogan {
+  text-align: center;
+}
+.slogan > h2 {
+  font-family: betty;
+  color: rgba(227, 208, 156, 0.7);
+  letter-spacing: 1rem;
+}
 .logo > h1 {
-  font-size: 5.5rem;
+  letter-spacing: 12px;
+  font-size: 12.5rem;
   font-family: fnc;
   color: #d3d3d3;
 }
@@ -44,13 +57,13 @@
   float: right;
 }
 .nav {
-  letter-spacing: 12px;
+  letter-spacing: 3px;
   font-size: 17px;
   color: #d3d3d3;
   font-family: simple;
 }
 .footer-container {
-  background-color: #1a1a1a;
+  background-color: #05101c;
   text-align: center;
   height: 10rem;
 }
@@ -60,5 +73,5 @@
   margin: 0;
 }
 .links-footer {
-  color: #5e5e5e;
+  color: #d3d3d3;
 }
