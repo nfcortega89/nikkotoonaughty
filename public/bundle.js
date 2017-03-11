@@ -14744,7 +14744,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -27548,7 +27548,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'header-container' },
-	        _react2.default.createElement('div', { className: 'logo-container' }),
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'logo' },
+	          'Gallery'
+	        ),
 	        _react2.default.createElement(
 	          'ul',
 	          null,
@@ -28176,10 +28180,10 @@
 	      this.username = user;
 	      this.password = pass;
 	    break;
-
+	      
 	    case 'bearer': // usage would be .auth(accessToken, { type: 'bearer' })
 	      this.set('Authorization', 'Bearer ' + user);
-	    break;
+	    break;  
 	  }
 	  return this;
 	};
@@ -28585,7 +28589,7 @@
 /* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
-
+	
 	/**
 	 * Expose `Emitter`.
 	 */
@@ -29391,7 +29395,7 @@
 /* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
-
+	
 	/**
 	 * Module dependencies.
 	 */
@@ -29530,7 +29534,7 @@
 /* 272 */
 /***/ function(module, exports) {
 
-
+	
 	/**
 	 * Return the mime type for the given `str`.
 	 *
@@ -30276,7 +30280,7 @@
 /* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-
+	
 	/**
 	 * This is the common logic for both the Node.js and web browser
 	 * implementations of `debug()`.
