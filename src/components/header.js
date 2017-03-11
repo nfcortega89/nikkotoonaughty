@@ -14,10 +14,10 @@ class Header extends Component {
   render() {
     return (
       <div className="header-container">
-        <span className="logo">Gallery</span>
+        <span className="logo"><h1>CUR-A-FAB</h1></span>
         <ul>
-          <li><a onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "Logout" : "Login"}</a></li>
-          <li><a>Follow User</a></li>
+          <li><a className="nav" onClick={this.onAuthenticateUser} href={this.props.url}>{this.props.isLoggedIn ? "LOGOUT" : "LOGIN"}</a></li>
+          <li><a className="nav">FOLLOW USER</a></li>
         </ul>
       </div>
     );

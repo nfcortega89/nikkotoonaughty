@@ -1,9 +1,10 @@
 @font-face {
   font-family: fnc;
-  src: url(..assets/FISH&CHIPS-Regular/ttf);
+  src: url('FISH&CHIPS-Regular.ttf');
 }
-body{
-   font-family: 'Open Sans',serif;
+@font-face {
+  font-family: simple;
+  src: url('Simple Print');
 }
 .gallery-container {
   border-top: 1 solid black;
@@ -12,7 +13,12 @@ body{
   justify-content: space-around;
 }
 .logo {
-  font-family: fnc
+  text-align: center;
+}
+.logo > h1 {
+  font-size: 5.5rem;
+  font-family: fnc;
+  color: #d3d3d3;
 }
 .image-container {
   float: left;
@@ -25,6 +31,7 @@ body{
   padding: 1rem;
 }
 .header-container {
+  height: inherit;
   background-color: #05101c;
   border-bottom: 17px solid #b9b9b9;
 }
@@ -35,6 +42,12 @@ body{
   display: inline;
   padding-left: 0.8em;
   float: right;
+}
+.nav {
+  letter-spacing: 12px;
+  font-size: 17px;
+  color: #d3d3d3;
+  font-family: simple;
 }
 .footer-container {
   background-color: #1a1a1a;

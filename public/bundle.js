@@ -27551,7 +27551,11 @@
 	        _react2.default.createElement(
 	          'span',
 	          { className: 'logo' },
-	          'Gallery'
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'CUR-A-FAB'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'ul',
@@ -27561,8 +27565,8 @@
 	            null,
 	            _react2.default.createElement(
 	              'a',
-	              { onClick: this.onAuthenticateUser, href: this.props.url },
-	              this.props.isLoggedIn ? "Logout" : "Login"
+	              { className: 'nav', onClick: this.onAuthenticateUser, href: this.props.url },
+	              this.props.isLoggedIn ? "LOGOUT" : "LOGIN"
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -27570,8 +27574,8 @@
 	            null,
 	            _react2.default.createElement(
 	              'a',
-	              null,
-	              'Follow User'
+	              { className: 'nav' },
+	              'FOLLOW USER'
 	            )
 	          )
 	        )
