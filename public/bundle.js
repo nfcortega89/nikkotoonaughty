@@ -27547,25 +27547,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'header-container' },
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'logo' },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'CUR-A-FAB'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'slogan' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'what interests you?'
-	          )
-	        ),
+	        { className: 'header' },
 	        _react2.default.createElement(
 	          'ul',
 	          null,
@@ -27586,6 +27568,20 @@
 	              { className: 'nav' },
 	              'FOLLOW USER'
 	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'title' },
+	          'CUR-A-FAB'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'slogan' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'what interests you?'
 	          )
 	        )
 	      );
@@ -29754,7 +29750,7 @@
 	function Footer() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "footer-container" },
+	    { className: "footer" },
 	    _react2.default.createElement(
 	      "div",
 	      { className: "col-md-3" },
@@ -29946,7 +29942,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'gallery-container' },
+	        { className: 'gallery' },
 	        _react2.default.createElement(
 	          'h4',
 	          null,

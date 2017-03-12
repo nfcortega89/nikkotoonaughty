@@ -7,31 +7,30 @@
   src: url('Simple Print.ttf');
 }
 @font-face {
-  font-family: betty;
-  src: url('Thinking_of_Betty.ttf');
+  font-family: canel;
+  src: url('CaneletterScriptThin_PersonalUse.otf');
 }
-.gallery-container {
-  border-top: 1 solid black;
+.gallery {
+  border-top: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-.logo {
-  text-align: center;
 }
 .slogan {
   text-align: center;
 }
 .slogan > h2 {
-  font-family: betty;
+  font-family: canel;
   color: rgba(126, 225, 229, 0.44);
   letter-spacing: 1rem;
 }
-.logo > h1 {
+.title {
+  text-align: center;
   letter-spacing: 12px;
   font-size: 12.5rem;
   font-family: fnc;
   color: #d3d3d3;
+  margin-top: none;
 }
 .image-container {
   float: left;
@@ -39,18 +38,18 @@
 .image-container > img {
   width: 300px;
 }
-.gallery-container > h4 {
+.gallery > h4 {
   flex: 1 0 100%;
   padding: 1rem;
 }
-.header-container {
+.header {
   height: inherit;
   background-color: #05101c;
   border-bottom: 17px solid #b9b9b9;
 }
-.header-container > ul, li {
+.header > ul, li {
   position: relative;
-  top: 8px;
+  top: -18px;
   list-style-type: none;
   display: inline;
   padding-left: 0.8em;
@@ -62,15 +61,16 @@
   color: #d3d3d3;
   font-family: simple;
 }
-.footer-container {
+.footer {
   background-color: #05101c;
   text-align: center;
   height: 10rem;
+  padding: 5rem;
 }
-.footer-container > ul, li {
+.footer > ul, li {
   float: none;
   display: inline;
-  margin: 0;
+  margin-top: 4rem;
 }
 .links-footer {
   text-transform: uppercase;
@@ -78,4 +78,5 @@
   color: #d3d3d3;
   letter-spacing: 3px;
   font-size: 17px;
+
 }

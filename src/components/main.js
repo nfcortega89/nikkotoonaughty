@@ -31,7 +31,7 @@ class Main extends Component {
   }
   render() {
       return (
-        <div className="gallery-container">
+        <div className="gallery">
           <h4>IG:</h4>
           {this.renderList()}
         </div>

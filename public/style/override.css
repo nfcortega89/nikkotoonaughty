@@ -3,17 +3,20 @@
   margin: 0;
   padding: 0;
 }
-.header-container {
+.header {
   width: 100%;
   margin: 0;
   padding: 3rem;
 }
-.footer-container {
+.footer {
   width: 100%;
   margin: 0;
   padding: 1rem;
 }
-.gallery-container {
+.gallery {
   width: 100%;
   margin: 0;
+}
+h1 {
+  margin-top: 3rem;
 }
