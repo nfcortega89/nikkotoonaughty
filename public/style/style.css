@@ -32,10 +32,10 @@
   color: #d3d3d3;
   margin-top: none;
 }
-.image-container {
+.card pic-card {
   float: left;
 }
-.image-container > img {
+.card pic-card > img {
   width: 300px;
 }
 .gallery > h4 {

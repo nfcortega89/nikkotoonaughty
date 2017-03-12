@@ -29988,8 +29988,13 @@
 	function Card(props) {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "image-container" },
-	    _react2.default.createElement("img", { src: props.image.images.standard_resolution.url })
+	    { className: "card pic-card" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "image" },
+	      _react2.default.createElement("img", { src: props.image.images.standard_resolution.url })
+	    ),
+	    _react2.default.createElement("div", { className: "card-details" })
 	  );
 	}
 

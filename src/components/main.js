@@ -16,6 +16,7 @@ class Main extends Component {
   }
   componentWillMount() {
     this.getApiData()
+    console.log(this.getApiData())
   }
   renderList() {
     let pics = [];
